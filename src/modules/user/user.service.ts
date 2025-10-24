@@ -1,3 +1,4 @@
+import type { User } from './user.interface.js';
 
 export class UserService {
     
@@ -12,8 +13,9 @@ export class UserService {
         
         console.log("User service get method called"+ this.company);
     }
-    create(){
-        console.log("User service create method called");
+    create(user: User){
+        
+        console.log("Aqui se va a crear un usuario en la base de datos", user);
     }
     update(){
         console.log("User service update method called");
